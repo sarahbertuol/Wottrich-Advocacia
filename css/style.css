@@ -535,9 +535,10 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
   background-color: var(--navy);
   min-height: 420px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 
 .advogado__photo-placeholder {

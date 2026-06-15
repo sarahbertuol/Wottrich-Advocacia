@@ -1,14 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 192">
-  <rect width="160" height="192" fill="#1B2A4A"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 248">
+  <rect width="190" height="248" fill="#1B2A4A"/>
   <defs>
-    <linearGradient id="g" x1="20" y1="10" x2="115" y2="188" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F0CE70"/>
-      <stop offset="0.45" stop-color="#C9973A"/>
-      <stop offset="1" stop-color="#9A7018"/>
+    <linearGradient id="g" x1="18" y1="18" x2="165" y2="244" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2D878"/>
+      <stop offset="0.38" stop-color="#D4A840"/>
+      <stop offset="0.72" stop-color="#C9973A"/>
+      <stop offset="1" stop-color="#8A6012"/>
     </linearGradient>
   </defs>
-  <line x1="26" y1="12" x2="26" y2="110" stroke="url(#g)" stroke-width="15" stroke-linecap="square"/>
-  <path d="M26 12 Q94 12 94 52 Q94 88 26 84" stroke="url(#g)" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <line x1="62" y1="78" x2="104" y2="110" stroke="url(#g)" stroke-width="12" stroke-linecap="round"/>
-  <polyline points="16,122 42,184 66,144 90,184 114,122" stroke="url(#g)" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="30" y1="18" x2="30" y2="204" stroke="url(#g)" stroke-width="20" stroke-linecap="butt"/>
+  <path d="M30 18 Q132 18 132 72 Q132 128 30 128" stroke="url(#g)" stroke-width="13" fill="none" stroke-linecap="butt" stroke-linejoin="round"/>
+  <line x1="92" y1="120" x2="144" y2="204" stroke="url(#g)" stroke-width="12" stroke-linecap="round"/>
+  <line x1="28" y1="204" x2="16" y2="240" stroke="url(#g)" stroke-width="12" stroke-linecap="round"/>
+  <line x1="16" y1="240" x2="62" y2="196" stroke="url(#g)" stroke-width="10" stroke-linecap="round"/>
+  <line x1="62" y1="196" x2="108" y2="240" stroke="url(#g)" stroke-width="10" stroke-linecap="round"/>
+  <line x1="108" y1="240" x2="144" y2="204" stroke="url(#g)" stroke-width="12" stroke-linecap="round"/>
+  <line x1="144" y1="204" x2="153" y2="18" stroke="url(#g)" stroke-width="14" stroke-linecap="round"/>
 </svg>

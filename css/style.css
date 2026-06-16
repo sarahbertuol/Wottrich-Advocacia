@@ -171,16 +171,10 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
 .navbar__logo {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-}
-
-.navbar__logo {
-  display: flex;
-  align-items: center;
 }
 
 .navbar__logo img {
-  height: 58px;
+  height: 76px;
   width: auto;
   display: block;
 }

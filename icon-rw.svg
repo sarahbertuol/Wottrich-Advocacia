@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 248">
+  <defs>
+    <linearGradient id="g" x1="18" y1="18" x2="165" y2="244" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2D878"/>
+      <stop offset="0.38" stop-color="#D4A840"/>
+      <stop offset="0.72" stop-color="#C9973A"/>
+      <stop offset="1" stop-color="#8A6012"/>
+    </linearGradient>
+  </defs>
+  <line x1="30" y1="18" x2="30" y2="204" stroke="url(#g)" stroke-width="20" stroke-linecap="butt"/>
+  <path d="M30 18 Q132 18 132 72 Q132 128 30 128" stroke="url(#g)" stroke-width="13" fill="none" stroke-linecap="butt" stroke-linejoin="round"/>
+  <line x1="92" y1="120" x2="144" y2="204" stroke="url(#g)" stroke-width="12" stroke-linecap="round"/>
+  <line x1="28" y1="204" x2="16" y2="240" stroke="url(#g)" stroke-width="12" stroke-linecap="round"/>
+  <line x1="16" y1="240" x2="62" y2="196" stroke="url(#g)" stroke-width="10" stroke-linecap="round"/>
+  <line x1="62" y1="196" x2="108" y2="240" stroke="url(#g)" stroke-width="10" stroke-linecap="round"/>
+  <line x1="108" y1="240" x2="144" y2="204" stroke="url(#g)" stroke-width="12" stroke-linecap="round"/>
+  <line x1="144" y1="204" x2="153" y2="18" stroke="url(#g)" stroke-width="14" stroke-linecap="round"/>
+</svg>

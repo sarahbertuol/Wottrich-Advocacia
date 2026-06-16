@@ -607,6 +607,13 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
 
 .footer__brand { }
 
+.footer__icon {
+  height: 64px;
+  width: auto;
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
 .footer__logo-text {
   display: flex;
   flex-direction: column;

@@ -140,8 +140,9 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
 .btn--whatsapp {
   background-color: #25D366;
   color: var(--white);
-  font-size: 1rem;
-  padding: 1rem 2.5rem;
+  font-size: 0.85rem;
+  padding: 0.65rem 1.5rem;
+  letter-spacing: 0.04em;
 }
 .btn--whatsapp:hover { background-color: #1ebe5d; color: var(--white); }
 
@@ -410,9 +411,12 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
 
 .areas__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   gap: 1.5rem;
 }
+
+.areas__grid .area-card:nth-child(-n+3) { grid-column: span 4; }
+.areas__grid .area-card:nth-child(n+4)  { grid-column: span 3; }
 
 .area-card {
   background-color: var(--white);
@@ -942,6 +946,7 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .areas__grid { grid-template-columns: repeat(2, 1fr); }
+  .areas__grid .area-card { grid-column: span 1; }
   .footer__grid { grid-template-columns: 1fr 1fr; gap: var(--space-lg); }
   .valores__grid { grid-template-columns: repeat(2, 1fr); }
   .advogado__card { grid-template-columns: 280px 1fr; }

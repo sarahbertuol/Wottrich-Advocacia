@@ -193,6 +193,14 @@ button {
   gap: 1rem;
 }
 
+/* ---------- Section title (shared) ---------- */
+
+.section-title {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  max-width: 75rem;
+  margin: 0 auto 3rem;
+}
+
 /* ---------- Services ---------- */
 
 .services {
@@ -206,60 +214,90 @@ button {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .services-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 3rem;
   }
 }
 
-.service-col {
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.service-card {
   border-top: 1px solid rgba(242, 238, 230, 0.25);
-  padding-top: 2rem;
-  transition: opacity 0.2s ease;
+  padding-top: 1.5rem;
+  transition: border-color 0.2s ease;
 }
 
-.service-col h2 {
-  font-size: clamp(1.75rem, 4vw, 2.75rem);
-  margin-bottom: 1.25rem;
-}
-
-.service-col p {
-  font-size: clamp(1rem, 1.5vw, 1.15rem);
-  max-width: 38ch;
-  color: rgba(242, 238, 230, 0.85);
-}
-
-.service-col.is-highlighted {
+.service-card:hover {
   border-top-color: var(--accent);
 }
 
-.service-col.is-highlighted h2 {
+.service-number {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 0.9rem;
   color: var(--accent);
+  margin-bottom: 0.75rem;
 }
 
-.capabilities {
+.service-card h3 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+  margin-bottom: 0.75rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  max-width: 32ch;
+  color: rgba(242, 238, 230, 0.85);
+}
+
+/* ---------- Differentials ---------- */
+
+.differentials {
+  background: var(--cream);
+  color: var(--ink);
+  padding: 5rem 1.5rem;
+}
+
+.differentials-list {
   max-width: 75rem;
-  margin: 4rem auto 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 0;
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: rgba(242, 238, 230, 0.75);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-weight: 600;
 }
 
-.capabilities li {
-  display: inline-flex;
-  align-items: center;
+@media (min-width: 768px) {
+  .differentials-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 3rem;
+  }
 }
 
-.capabilities li:not(:last-child)::after {
-  content: "\00B7";
-  margin: 0 0.75rem;
+.differentials-list li {
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.differentials-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
   color: var(--accent);
 }
 

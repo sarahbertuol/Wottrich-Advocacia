@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WeHelpFlow — Webflow development for agencies &amp; businesses</title>
+<meta name="description" content="WeHelpFlow turns big promises into Webflow sites that actually ship — for agencies who'd rather sell than code, and for businesses who just want it done right.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="#hero" class="logo">wehelpflow<span class="logo-dot"></span></a>
+  <div class="nav-right">
+    <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+      <span class="lang-option is-active" data-lang-btn="en">EN</span>
+      <span class="lang-sep">/</span>
+      <span class="lang-option" data-lang-btn="pt">PT</span>
+    </button>
+    <a href="#cta" class="nav-link" data-en="Let's talk" data-pt="Vamos conversar">Let's talk</a>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <h1 data-en="Great pitch. Now let's build it." data-pt="Ótima venda. Agora vamos construir.">Great pitch. Now let&rsquo;s build it.</h1>
+  <p class="sub" data-en="WeHelpFlow turns big promises into Webflow sites that actually ship — for agencies who'd rather sell than code, and for businesses who just want it done right." data-pt="A WeHelpFlow transforma promessas grandes em sites Webflow que realmente saem do papel — pra agências que preferem vender a programar, e pra empresas que só querem ver funcionando.">
+    WeHelpFlow turns big promises into Webflow sites that actually ship — for agencies who&rsquo;d rather sell than code, and for businesses who just want it done right.
+  </p>
+  <div class="hero-ctas">
+    <button class="btn btn-outline" data-target-col="agencies" data-en="I'm an agency →" data-pt="Sou agência →">I&rsquo;m an agency →</button>
+    <button class="btn btn-outline" data-target-col="businesses" data-en="I need a site →" data-pt="Preciso de um site →">I need a site →</button>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="services-grid">
+    <div class="service-col" id="col-agencies">
+      <h2 data-en="For agencies" data-pt="Para agências">For agencies</h2>
+      <p data-en="White-label Webflow development. You sell, we build — quietly, fast, and exactly to spec. Your client never has to know we exist, unless you want them to." data-pt="Desenvolvimento Webflow white-label. Você vende, a gente constrói — em silêncio, rápido e exatamente como prometido. Seu cliente nem precisa saber que existimos, a menos que você queira.">
+        White-label Webflow development. You sell, we build — quietly, fast, and exactly to spec. Your client never has to know we exist, unless you want them to.
+      </p>
+    </div>
+    <div class="service-col" id="col-businesses">
+      <h2 data-en="For businesses" data-pt="Para empresas">For businesses</h2>
+      <p data-en="Webflow sites, technical SEO, and migrations handled by someone who's already fixed the messy stuff for global brands. No agency markup, no guesswork." data-pt="Sites Webflow, SEO técnico e migrações feitos por quem já resolveu o caos técnico de marcas globais. Sem markup de agência, sem chute.">
+        Webflow sites, technical SEO, and migrations handled by someone who&rsquo;s already fixed the messy stuff for global brands. No agency markup, no guesswork.
+      </p>
+    </div>
+  </div>
+
+  <ul class="capabilities">
+    <li data-en="Webflow development & migrations" data-pt="Desenvolvimento e migração Webflow">Webflow development &amp; migrations</li>
+    <li data-en="Technical SEO & localization (EN/PT)" data-pt="SEO técnico e localização (EN/PT)">Technical SEO &amp; localization (EN/PT)</li>
+    <li data-en="CMS builds & custom interactions" data-pt="CMS e interações personalizadas">CMS builds &amp; custom interactions</li>
+    <li data-en="Ongoing care & optimization" data-pt="Cuidado contínuo e otimização">Ongoing care &amp; optimization</li>
+  </ul>
+</section>
+
+<section class="cta" id="cta">
+  <h2 data-en="Got a site that needs to happen?" data-pt="Tem um site que precisa sair do papel?">Got a site that needs to happen?</h2>
+  <a class="btn btn-solid" href="mailto:hello@wehelpflow.com" data-en="Start the conversation" data-pt="Começar conversa">Start the conversation</a>
+</section>
+
+<footer class="footer">
+  <p data-en="© 2026 WeHelpFlow. Built by humans, not templates." data-pt="© 2026 WeHelpFlow. Feito por humanos, não por templates.">© 2026 WeHelpFlow. Built by humans, not templates.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

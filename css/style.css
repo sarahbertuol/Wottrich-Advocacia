@@ -953,7 +953,8 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .areas__grid { grid-template-columns: repeat(2, 1fr); }
-  .areas__grid .area-card { grid-column: span 1; }
+  .areas__grid .area-card:nth-child(-n+3),
+  .areas__grid .area-card:nth-child(n+4) { grid-column: span 1; }
   .footer__grid { grid-template-columns: 1fr 1fr; gap: var(--space-lg); }
   .valores__grid { grid-template-columns: repeat(2, 1fr); }
   .advogado__card { grid-template-columns: 280px 1fr; }
@@ -1011,6 +1012,8 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
   .navbar__hamburger { display: flex; z-index: 1001; }
 
   .areas__grid { grid-template-columns: 1fr; }
+  .areas__grid .area-card:nth-child(-n+3),
+  .areas__grid .area-card:nth-child(n+4) { grid-column: span 1; }
 
   .advogado__card { grid-template-columns: 1fr; }
   .advogado__photo { min-height: 280px; }

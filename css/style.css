@@ -10,8 +10,8 @@
   --text-muted: #5a6478;
   --border-light: rgba(201, 151, 58, 0.25);
 
-  --font-heading: 'Cormorant Garamond', Georgia, serif;
-  --font-body: 'Mulish', system-ui, sans-serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
 
   --space-xs: 0.5rem;
   --space-sm: 1rem;

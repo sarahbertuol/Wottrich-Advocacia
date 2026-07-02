@@ -333,10 +333,31 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
   background-size: cover;
 }
 
+.hero__inner {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
+}
+
 .hero__content {
   position: relative;
   z-index: 1;
-  max-width: 750px;
+  flex: 1;
+  max-width: 560px;
+}
+
+.hero__visual {
+  flex: 0 0 auto;
+  width: clamp(220px, 28vw, 300px);
+  opacity: 0.88;
+  filter: drop-shadow(0 0 40px rgba(201, 151, 58, 0.22));
+  z-index: 1;
+}
+
+.hero__visual svg {
+  width: 100%;
+  height: auto;
 }
 
 .hero__eyebrow {
@@ -1033,9 +1054,15 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
 
   .footer__grid { grid-template-columns: 1fr; gap: var(--space-lg); }
 
+  .hero__inner { gap: 2.5rem; }
+  .hero__visual { width: 200px; }
   .hero__actions { flex-direction: column; align-items: flex-start; }
 
   .valores__grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+  .hero__visual { display: none; }
 }
 
 @media (max-width: 480px) {

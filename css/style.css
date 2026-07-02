@@ -322,7 +322,7 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
 .hero__bg {
   position: absolute;
   inset: 0;
-  background: url('/hero-bg.jpg') 62% center / cover no-repeat;
+  background: url('/hero-bg.webp') 62% center / cover no-repeat;
 }
 
 .hero__bg::after {

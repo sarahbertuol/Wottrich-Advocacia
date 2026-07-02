@@ -344,29 +344,18 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
     );
 }
 
-/* Imagem posicionada à direita com spotlight sobre a Themis */
+/* Imagem com fundo branco: invert+hue-rotate mantém as linhas douradas,
+   mix-blend-mode:screen faz o fundo branco (→preto após invert) desaparecer */
 .hero__themis-img {
   position: absolute;
   right: 0;
   top: 0;
-  width: 62%;
+  width: 60%;
   height: 100%;
   object-fit: cover;
-  object-position: 30% center;
-  mask-image: radial-gradient(ellipse 40% 60% at 40% 50%,
-    black 0%,
-    black 28%,
-    rgba(0, 0, 0, 0.55) 52%,
-    rgba(0, 0, 0, 0.06) 76%,
-    transparent 92%
-  );
-  -webkit-mask-image: radial-gradient(ellipse 40% 60% at 40% 50%,
-    black 0%,
-    black 28%,
-    rgba(0, 0, 0, 0.55) 52%,
-    rgba(0, 0, 0, 0.06) 76%,
-    transparent 92%
-  );
+  object-position: center 15%;
+  filter: invert(1) hue-rotate(180deg);
+  mix-blend-mode: screen;
 }
 
 .hero__content {

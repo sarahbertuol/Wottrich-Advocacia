@@ -322,7 +322,7 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
 .hero__bg {
   position: absolute;
   inset: 0;
-  background: url('/hero-bg.webp') 72% center / cover no-repeat;
+  background: url('/hero-bg.webp') 82% center / cover no-repeat;
 }
 
 .hero__bg::after {
@@ -330,15 +330,13 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
   position: absolute;
   inset: 0;
   background:
-    /* topo suave para navbar */
-    linear-gradient(to bottom, rgba(17, 29, 52, 0.60) 0%, transparent 18%),
-    /* esquerda para texto legível → direita totalmente transparente (Themis visível) */
+    linear-gradient(to bottom, rgba(17, 29, 52, 0.35) 0%, transparent 14%),
     linear-gradient(
       95deg,
       rgba(17, 29, 52, 0.92) 0%,
-      rgba(17, 29, 52, 0.78) 22%,
-      rgba(17, 29, 52, 0.35) 46%,
-      rgba(17, 29, 52, 0.00) 68%
+      rgba(17, 29, 52, 0.75) 20%,
+      rgba(17, 29, 52, 0.18) 40%,
+      rgba(17, 29, 52, 0.00) 54%
     );
 }
 

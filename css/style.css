@@ -338,17 +338,18 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
   );
 }
 
-/* Imagem posicionada à direita — fundo da imagem deve ser #111d34 */
+/* Imagem posicionada à direita — figura inteira visível */
 .hero__themis-img {
   position: absolute;
   right: 0;
-  top: 0;
-  width: 62%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 15%;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 18%, black 100%);
-  mask-image: linear-gradient(to right, transparent 0%, black 18%, black 100%);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 55%;
+  height: 95%;
+  object-fit: contain;
+  object-position: center center;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 95%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 20%, black 95%, transparent 100%);
 }
 
 .hero__content {

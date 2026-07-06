@@ -324,32 +324,28 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
   inset: 0;
 }
 
-/* Overlay: fade suave da esquerda para proteger área de texto */
+/* Overlay: protege área de texto à esquerda */
 .hero__bg::after {
   content: '';
   position: absolute;
   inset: 0;
-  z-index: 1;
   background: linear-gradient(to right,
-    rgba(17, 29, 52, 0.90) 0%,
-    rgba(17, 29, 52, 0.90) 36%,
-    rgba(17, 29, 52, 0.30) 52%,
-    rgba(17, 29, 52, 0.00) 64%
+    rgba(17, 29, 52, 0.95) 0%,
+    rgba(17, 29, 52, 0.95) 35%,
+    rgba(17, 29, 52, 0.40) 50%,
+    rgba(17, 29, 52, 0.00) 62%
   );
 }
 
-/* Imagem posicionada à direita — figura inteira visível */
+/* Imagem retrato: height 100% + width auto mantém proporção e mostra figura inteira */
 .hero__themis-img {
   position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 55%;
-  height: 95%;
-  object-fit: contain;
-  object-position: center center;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 95%, transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0%, black 20%, black 95%, transparent 100%);
+  right: 3%;
+  top: 0;
+  height: 100%;
+  width: auto;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 88%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 20%, black 88%, transparent 100%);
 }
 
 .hero__content {

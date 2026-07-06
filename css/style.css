@@ -346,11 +346,11 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
   width: auto;
   /* Fade horizontal (esquerda/direita) + vertical (topo) — elimina bordas visíveis */
   -webkit-mask-image:
-    linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%),
+    linear-gradient(to right, transparent 0%, black 26%, black 74%, transparent 100%),
     linear-gradient(to bottom, transparent 0%, black 12%, black 100%);
   -webkit-mask-composite: destination-in;
   mask-image:
-    linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%),
+    linear-gradient(to right, transparent 0%, black 26%, black 74%, transparent 100%),
     linear-gradient(to bottom, transparent 0%, black 12%, black 100%);
   mask-composite: intersect;
 }

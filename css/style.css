@@ -337,15 +337,15 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
   );
 }
 
-/* Imagem retrato: height 100% + width auto mantém proporção e mostra figura inteira */
+/* Imagem retrato: posicionada dentro da área direita da hero */
 .hero__themis-img {
   position: absolute;
-  right: 3%;
-  top: 0;
-  height: 100%;
+  right: 8%;
+  top: 22%;
+  height: 78%;
   width: auto;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 88%, transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0%, black 20%, black 88%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 90%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 15%, black 90%, transparent 100%);
 }
 
 .hero__content {

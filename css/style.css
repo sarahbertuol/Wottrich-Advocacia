@@ -324,14 +324,35 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
   inset: 0;
 }
 
-/* Imagem retrato: fundo navy da imagem faz match com o hero — sem overlay necessário */
+/* Overlay: protege área de texto à esquerda */
+.hero__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right,
+    rgba(17, 29, 52, 0.95) 0%,
+    rgba(17, 29, 52, 0.95) 35%,
+    rgba(17, 29, 52, 0.40) 50%,
+    rgba(17, 29, 52, 0.00) 62%
+  );
+}
+
+/* Imagem retrato: posicionada no centro-direito da hero */
 .hero__themis-img {
   position: absolute;
   right: 16%;
   top: 20%;
   height: 80%;
   width: auto;
-  opacity: 0.92;
+  /* Fade horizontal (esquerda/direita) + vertical (topo) — elimina bordas visíveis */
+  -webkit-mask-image:
+    linear-gradient(to right, transparent 0%, black 26%, black 74%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 12%, black 100%);
+  -webkit-mask-composite: destination-in;
+  mask-image:
+    linear-gradient(to right, transparent 0%, black 26%, black 74%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 12%, black 100%);
+  mask-composite: intersect;
 }
 
 .hero__content {

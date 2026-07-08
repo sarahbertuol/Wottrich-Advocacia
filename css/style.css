@@ -1063,6 +1063,23 @@ p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
   .hero__themis-img { display: none; }
   .hero__text { font-size: 0.875rem; line-height: 1.7; }
   .hero__oab { display: block; }
+
+  /* Navbar mobile */
+  .navbar__logo {
+    position: relative;
+    z-index: 1001;
+  }
+  .navbar__logo img {
+    height: 72px !important;
+  }
+  .navbar__link,
+  .navbar__dropdown-toggle {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: none;
+  }
 }
 
 @media (max-width: 480px) {
